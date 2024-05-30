@@ -20,5 +20,3 @@ import 'dayjs/locale/zh-cn'
 dayjs.locale('en')
 const locale = ref(zhCN)
 </script>
-
-<style scoped></style>
