@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "lint": "eslint . --ext .vue,.js,.cjs,.mjs,.ts,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "prepare": "husky install",
     "commit": "cz"
@@ -36,6 +36,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
     "husky": "^8.0.3",
+    "lint-staged": "^15.2.5",
     "npm-run-all2": "^6.1.2",
     "prettier": "^3.2.5",
     "typescript": "~5.4.0",
@@ -47,5 +48,8 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "lint-staged": {
+    "**/*.{vue,js,ts,cjs,mjs}": "npm run lint"
   }
 }
