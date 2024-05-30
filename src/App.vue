@@ -5,7 +5,7 @@
       components: {}
     }"
   >
-    <a-app class="h-[100%]">
+    <a-app>
       <RouterView />
     </a-app>
   </a-config-provider>
