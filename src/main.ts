@@ -3,8 +3,6 @@ import 'ant-design-vue/dist/reset.css'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
-const a = 123
-
 import App from './App.vue'
 import router from './router'
 
