@@ -1,13 +1,3 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-// import enUS from 'ant-design-vue/es/locale/en_US'
-import zhCN from 'ant-design-vue/es/locale/zh_CN'
-import dayjs from 'dayjs'
-import 'dayjs/locale/zh-cn'
-dayjs.locale('en')
-const locale = ref(zhCN)
-</script>
-
 <template>
   <a-config-provider
     :locale="locale"
@@ -20,5 +10,15 @@ const locale = ref(zhCN)
     </a-app>
   </a-config-provider>
 </template>
+
+<script setup lang="ts">
+import { ref } from 'vue'
+// import enUS from 'ant-design-vue/es/locale/en_US'
+import zhCN from 'ant-design-vue/es/locale/zh_CN'
+import dayjs from 'dayjs'
+import 'dayjs/locale/zh-cn'
+dayjs.locale('en')
+const locale = ref(zhCN)
+</script>
 
 <style scoped></style>

@@ -1,7 +1,7 @@
 <template>
-  <main>
-    <a-date-picker />
-  </main>
+  <div>test</div>
 </template>
 
 <script setup lang="ts"></script>
+
+<style></style>

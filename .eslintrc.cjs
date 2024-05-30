@@ -13,6 +13,11 @@ module.exports = {
     ecmaVersion: 'latest'
   },
   rules: {
-    'no-var': 2
+    'vue/block-order': [
+      'error',
+      {
+        order: ['template', 'script', 'style']
+      }
+    ]
   }
 }
