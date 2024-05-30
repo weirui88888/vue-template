@@ -1,15 +1,17 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <a-button type="primary" @click="showMessage">Open message</a-button>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+<script lang="ts" setup>
+import { useGlobalStore } from '@/stores/global'
+const global = useGlobalStore()
+const showMessage = () => {
+  global.modal.success({
+    title: '好呀',
+    content: 'hello',
+    onOk() {
+      console.log('哈哈哈')
+    }
+  })
 }
-</style>
+</script>
