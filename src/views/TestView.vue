@@ -1,7 +1,8 @@
 <template>
-  <div>test</div>
+  <div>{{ name }}</div>
 </template>
 
-<script setup lang="ts"></script>
-
+<script setup lang="ts">
+const name = ref('jack')
+</script>
 <style lang="scss" scoped></style>
