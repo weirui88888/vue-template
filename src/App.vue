@@ -12,7 +12,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
 // import enUS from 'ant-design-vue/es/locale/en_US'
 import zhCN from 'ant-design-vue/es/locale/zh_CN'
 import dayjs from 'dayjs'
