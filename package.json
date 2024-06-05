@@ -63,5 +63,8 @@
   "lint-staged": {
     "**/*.{vue,js,ts,cjs,mjs}": "npm run lint",
     "**/*.{vue,css,scss}": "npm run lint:style"
+  },
+  "volta": {
+    "node": "20.14.0"
   }
 }
