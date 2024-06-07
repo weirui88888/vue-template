@@ -10,6 +10,14 @@
 
 <script setup lang="ts">
 import { useCounterStore } from '@/stores/counter'
+import request from '@/api/axios'
+
+onMounted(() => {
+  request.get('mock/getList').then((res) => {
+    console.log('👀 ~ request.get ~ res:', res)
+  })
+})
+
 const store = useCounterStore()
 </script>
 
