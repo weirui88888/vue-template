@@ -12,9 +12,16 @@
 import { useCounterStore } from '@/stores/counter'
 import request from '@/api/axios'
 
+interface GetListResponse {
+  code: number
+  dataGoods: {
+    list: Record<string, any>[]
+  }
+}
+
 onMounted(() => {
-  request.get('mock/getList').then((res) => {
-    console.log('👀 ~ request.get ~ res:', res)
+  request.get<GetListResponse>('mock/getList').then((res) => {
+    console.log('👀 ~ request.get ~ res:', res.code)
   })
 })
 

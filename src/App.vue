@@ -24,7 +24,6 @@
 
 <script setup lang="ts">
 // import enUS from 'ant-design-vue/es/locale/en_US'
-console.log(import.meta.env)
 import zhCN from 'ant-design-vue/es/locale/zh_CN'
 import dayjs from 'dayjs'
 import 'dayjs/locale/zh-cn'
